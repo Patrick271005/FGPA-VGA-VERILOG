@@ -4,7 +4,7 @@ title: FPGA VGA Driver Project
 tags: fpga vga verilog
 categories: demo
 ---
-
+test
 Welcome to my blog. This blog is a walk through of my FGPA VGA Driver Project. The project is mainly focussesd on using the VGA driver to display a graphical image on a 640x480 resolution display using the Vivado software and the artics 7 basys 3 development board
 
 ## Project Overview
