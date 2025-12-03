@@ -222,9 +222,13 @@ My unique design created more complex hardware then the colourStripes template w
 
 ### **Refrences**
 [1] M. Lynch, “Machine Learning with Python”, Lecture,  Atlantic Technological University, Galway, 2025.
+
 [2]Wikipedia Contributors, “VGA connector,” Wikipedia, Aug. 04, 2019. https://en.wikipedia.org/wiki/VGA_connector
+
 [3] OpenAI, ChatGPT, [Online]. Available: https://chat.openai.com/
+
 [4]“Interactive Formulae and Tables Booklet | Irish Mathematics Teachers’ Association,” Irish Mathematics Teachers’ Association, Oct. 04, 2024. https://imta.ie/interactive-formulae-and-tables-booklet/
+
 [5] P. Flanagan, "Architecture diagram", presented at Atlantic Technological University Galway, 2025.
 
 
