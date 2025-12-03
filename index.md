@@ -4,7 +4,7 @@ title: FPGA VGA Driver Project
 tags: fpga vga verilog
 categories: demo
 ---
-test
+
 Welcome to my blog. This blog is a walk through of my FGPA VGA Driver Project. The project is mainly focussesd on using the VGA driver to display a graphical image on a 640x480 resolution display using the Vivado software and the artics 7 basys 3 development board
 
 ## Project Overview
@@ -24,6 +24,7 @@ The provided template consisted of three main files.
 ## Template Code Diagrams
 
 <img src="https://raw.githubusercontent.com/Patrick271005/FGPA-VGA-VERILOG/main/docs/assets/images/D1.jpeg">
+[1] template architecture diagrams 
 
 
 
@@ -55,7 +56,7 @@ ColourStripes u_colour_stripes (
 <img src="https://raw.githubusercontent.com/Patrick271005/FGPA-VGA-VERILOG/main/docs/assets/images/Screenshot 2025-12-02 131711.png">
 
 
-A VGA interface works by transmitting analog video signals for Red,Green and blue along with synchronisation signals for timing using the 15 pin VGA connector to a display. The pixels are scanned from the left side of the screen all the way to the end of the right side and uses the hsync and vsync to know when to start a new line on the left hand side[1] Wikipedia
+A VGA interface works by transmitting analog video signals for Red,Green and blue along with synchronisation signals for timing using the 15 pin VGA connector to a display. The pixels are scanned from the left side of the screen all the way to the end of the right side and uses the hsync and vsync to know when to start a new line on the left hand side[2] Image from Wikipedia
 
 <img src="https://raw.githubusercontent.com/Patrick271005/FGPA-VGA-VERILOG/main/docs/assets/images/Vga-cable.jpg">
 
@@ -84,7 +85,7 @@ this is a picture of my working template after fixing the instantiations of row 
 For my unique design I wanted to gradualy build up my understanding of the FGPA graphics code.I ended up with a 3 stage process progressing in difficulty as time went along.
 
 ***Stage one: Ireland Flag***
-I decided to begin with a simple Irish flag to learn how to use the code to correlate to different screen coordinates. This was relatively easy as that was required was dividing the 640 pixel wide screen into 3 seprate sections and changing the colour in each section. I used AI to assit me in showing how to create each colour[2].
+I decided to begin with a simple Irish flag to learn how to use the code to correlate to different screen coordinates. This was relatively easy as that was required was dividing the 640 pixel wide screen into 3 seprate sections and changing the colour in each section. I used AI to assit me in showing how to create each colour[3].
 
 <img src="https://raw.githubusercontent.com/Patrick271005/FGPA-VGA-VERILOG/main/docs/assets/images/ColourChart.jpg">
 
@@ -93,7 +94,7 @@ I decided to begin with a simple Irish flag to learn how to use the code to corr
 <img src="https://raw.githubusercontent.com/Patrick271005/FGPA-VGA-VERILOG/main/docs/assets/images/IrishFlag.jpeg">
 
 ***Stage Two: Learning Semicircles***
-To progress from simple rectangles i wanted to learn how to create curved shapes such as circles and semi circles. I used the maths formulas and tables book [3] to get the equation for a circle
+To progress from simple rectangles i wanted to learn how to create curved shapes such as circles and semi circles. I used the maths formulas and tables book [4] to get the equation for a circle
 <img src="https://raw.githubusercontent.com/Patrick271005/FGPA-VGA-VERILOG/main/docs/assets/images/tables.png">
 from this i simply added a red semi circle to my exisiting Irish flag.
 <img src="https://raw.githubusercontent.com/Patrick271005/FGPA-VGA-VERILOG/main/docs/assets/images/Semicircle.jpeg">
@@ -202,22 +203,29 @@ Ensures its within the button radius then creates a small black circle
 Checks if its distance is larger then button and less then or equal to semicircles to print a small white border around button
 .
 
-### **Architecture**
+### **Architecture diagram**
 
 
 <img src="https://raw.githubusercontent.com/Patrick271005/FGPA-VGA-VERILOG/main/docs/assets/images/D2.jpeg">
+[5] My architecture diagram for the project.
 
 
 ### **Simulation**
 Simulation was done the exact same way as my template simulation as it used the same testbench.v. The only file I altered for my unique design was ColourStripes.v
 
 
-### **Synthesis**
-Describe the synthesis & implementation outputs for your design, are there any differences to that of the original design? Guideline 1-2 short paragraphs.
+
 
 ### **Synthesis**
 <img src="https://raw.githubusercontent.com/Patrick271005/FGPA-VGA-VERILOG/main/docs/assets/images/Design.jpeg">
+My unique design created more complex hardware then the colourStripes template which was expected as it contains more advanced code 
 
 ### **Refrences**
-### **Conclusion**
+[1] M. Lynch, “Machine Learning with Python”, Lecture,  Atlantic Technological University, Galway, 2025.
+[2]Wikipedia Contributors, “VGA connector,” Wikipedia, Aug. 04, 2019. https://en.wikipedia.org/wiki/VGA_connector
+[3] OpenAI, ChatGPT, [Online]. Available: https://chat.openai.com/
+[4]“Interactive Formulae and Tables Booklet | Irish Mathematics Teachers’ Association,” Irish Mathematics Teachers’ Association, Oct. 04, 2024. https://imta.ie/interactive-formulae-and-tables-booklet/
+[5] P. Flanagan, "Architecture diagram", presented at Atlantic Technological University Galway, 2025.
+
+
 
